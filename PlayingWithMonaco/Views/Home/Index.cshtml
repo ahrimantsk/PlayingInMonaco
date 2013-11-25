@@ -18,7 +18,13 @@
         </div>
     </section>
 }
-@ViewBag.Monaco
+<div class="monaco-badge">@ViewBag.Monaco</div>
+
+@if (ViewBag.Monaco is string){
+
+@: <button onclick="SayHelloToMonaco()"></button>
+
+}
 <h3>We suggest the following:</h3>
 <ol class="round">
     <li class="one">
