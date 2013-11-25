@@ -6,8 +6,10 @@ using System.Web.Mvc;
 
 namespace PlayingWithMonaco.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
